@@ -15,7 +15,7 @@ def PARSE_PLA(_PLA_FILENAME):  #using regular expression to parse the PLA table
             PLA_TYPE_INT = {'f':0,'r':1,'fr':2,'fd':3,'dr':4,'fdr':5}
 
 
-            f = open(_PLA_FILENAME,"r")
+            f = open(_PLA_FILENAME,"r") #the file name for the PLA table
             s = f.readlines()
 
             d = dict(N_IP=None, N_OP=None,IP_LABEL=None, OP_LABEL=None,N_P=None, TYPE=None, TT=set())
