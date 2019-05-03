@@ -2,7 +2,7 @@
 
 import re
 
-def PARSE_PLA(_PLA_FILENAME):
+def PARSE_PLA(_PLA_FILENAME):  #using regular expression to parse the PLA table
             PLA_COMMENT = re.compile(r"^#(.*$)")
             PLA_TYPE = re.compile(r'^.type\s+(f|r|fr|fd|dr|fdr)$') 
             PLA_INP= re.compile(r'^.i\s+((\d)+)$')
